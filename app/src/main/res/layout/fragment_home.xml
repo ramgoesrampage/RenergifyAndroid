@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:spacing="12dp"
+        android:layout_marginTop="80dp"
+        android:layout_marginBottom="200dp">
+
+        <!-- Rounded Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp">
+
+            <!-- Title -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Renewable Energy Generation"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_gravity="center"
+                android:paddingBottom="16dp" />
+
+            <!-- Tabs -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="1dp">
+
+                <TextView android:id="@+id/tabDay"
+                    style="@style/TabStyle"
+                    android:text="Day"
+                    android:textColor="#0000FF" />
+
+                <TextView android:id="@+id/tabWeek"
+                    style="@style/TabStyle"
+                    android:text="Week" />
+
+                <TextView android:id="@+id/tabMonth"
+                    style="@style/TabStyle"
+                    android:text="Month" />
+
+                <TextView android:id="@+id/tabAllTime"
+                    style="@style/TabStyle"
+                    android:text="All time" />
+            </LinearLayout>
+
+            <!-- Circular Chart -->
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/baseline_pie_chart_24"
+                tools:ignore="ContentDescription"
+                android:layout_marginBottom="16dp" />
+        </LinearLayout>
+
+        <!-- Another Rounded Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:layout_marginBottom="16dp"
+            android:elevation="4dp">
+
+            <!-- Breakdown -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Source Breakdown"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:paddingBottom="8dp"
+                android:textColor="#000000" />
+
+            <!-- Breakdown Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="1. Hydropower"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFD700"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="652 kWh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:text="58.5%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+            <!-- Wind Energy -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="2. Wind Energy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#1E90FF"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="314 kWh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:text="28%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Solar Energy -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="3. Solar Energy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#32CD32"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="112 kWh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:text="10%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+            <!-- Biomass Energy -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp">
+
+                <TextView
+                    android:text="4. Biomass Energy"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FF69B4"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:text="37 kWh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000" />
+
+                <TextView
+                    android:text="3.5%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:textColor="#000" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Another Rounded Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:elevation="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Power generated"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center"
+                android:paddingTop="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="19 562"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:textColor="#000"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="↓ 2131Wh (14%)"
+                android:textColor="#FF0000"
+                android:gravity="center"
+                android:paddingBottom="8dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="16dp"
+                android:src="@drawable/baseline_area_chart_24"
+                android:scaleType="centerInside"
+                tools:ignore="ContentDescription" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>
